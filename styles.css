@@ -122,14 +122,14 @@ body {
 .card-content {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 18px;
 }
 
 .card-logo {
     flex-shrink: 0;
-    width: 70px;
-    height: 70px;
-    border-radius: 12px;
+    width: 80px;
+    height: 80px;
+    border-radius: 14px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -149,10 +149,10 @@ body {
 }
 
 .card-info h3 {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     font-weight: 700;
     color: #1a1a2e;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 
 .prime-agro-card .card-info h3 {
@@ -164,26 +164,26 @@ body {
 }
 
 .card-desc {
-    font-size: 0.68rem;
+    font-size: 0.78rem;
     color: #444;
     line-height: 1.4;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 
 .card-tags {
-    font-size: 0.62rem;
+    font-size: 0.72rem;
     color: #888;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 /* Buttons */
 .btn {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    padding: 7px 18px;
+    gap: 7px;
+    padding: 9px 22px;
     border-radius: 50px;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     font-weight: 600;
     color: #fff;
     text-decoration: none;
@@ -214,8 +214,8 @@ body {
 }
 
 .btn svg {
-    width: 13px;
-    height: 13px;
+    width: 15px;
+    height: 15px;
 }
 
 /* Responsive - Tablet */
@@ -241,16 +241,16 @@ body {
     }
 
     .card {
-        padding: 16px;
+        padding: 18px;
     }
 
     .card-logo {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
     }
 
     .card-info h3 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -286,34 +286,34 @@ body {
 
     .cards-container {
         flex-direction: row;
-        gap: 24px;
+        gap: 28px;
     }
 
     .card {
         flex: 1;
-        padding: 20px;
+        padding: 24px;
     }
 
     .card-logo {
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
     }
 
     .card-info h3 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .card-desc {
-        font-size: 0.8rem;
+        font-size: 0.88rem;
     }
 
     .card-tags {
-        font-size: 0.75rem;
+        font-size: 0.82rem;
     }
 
     .btn {
-        padding: 10px 22px;
-        font-size: 0.85rem;
+        padding: 11px 26px;
+        font-size: 0.92rem;
     }
 }
 
