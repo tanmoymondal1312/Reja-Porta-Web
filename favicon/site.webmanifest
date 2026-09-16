@@ -1,0 +1,27 @@
+{
+  "name": "Reja Portal - আপনার সব ব্যবসা, এক জায়গায়",
+  "short_name": "Reja Portal",
+  "description": "সহজে পরিচালনা করুন, দ্রুত তথ্য দেখুন এবং আপনার ব্যবসার হিসাব রাখুন।",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#2e7d32",
+  "background_color": "#f0f4f0",
+  "categories": ["business", "utilities"],
+  "lang": "bn",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "favicon/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
