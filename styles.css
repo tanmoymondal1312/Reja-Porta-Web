@@ -7,8 +7,8 @@
 body {
     font-family: 'Noto Sans Bengali', sans-serif;
     background-color: #f0f4f0;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
 }
@@ -17,7 +17,7 @@ body {
 .hero {
     position: relative;
     width: 100%;
-    min-height: 140px;
+    min-height: 120px;
     flex: 0 0 auto;
     display: flex;
     align-items: center;
@@ -83,7 +83,7 @@ body {
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
-    flex: 1;
+    flex: 1 1 auto;
 }
 
 .business-section h2 {
