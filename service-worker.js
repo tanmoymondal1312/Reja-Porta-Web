@@ -1,24 +1,7 @@
-const CACHE_NAME = 'reja-portal-v1';
-const urlsToCache = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/favicon/web-app-manifest-192x192.png',
-  '/favicon/web-app-manifest-512x512.png',
-  '/favicon/favicon.ico',
-  '/favicon/apple-touch-icon.png',
-  '/images/reja-portal-logo.png',
-  '/images/home_bg.webp',
-  '/images/prime_agro.webp',
-  '/images/vumiseba_logo.webp'
-];
+const CACHE_NAME = 'reja-portal-v2';
 
 self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => cache.addAll(urlsToCache))
-      .then(() => self.skipWaiting())
-  );
+  self.skipWaiting();
 });
 
 self.addEventListener('activate', event => {
@@ -37,25 +20,16 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request)
+    fetch(event.request)
       .then(response => {
-        if (response) {
-          return response;
-        }
-        return fetch(event.request).then(response => {
-          if (!response || response.status !== 200 || response.type !== 'basic') {
-            return response;
-          }
-          const responseToCache = response.clone();
-          caches.open(CACHE_NAME)
-            .then(cache => {
-              cache.put(event.request, responseToCache);
-            });
-          return response;
+        const responseClone = response.clone();
+        caches.open(CACHE_NAME).then(cache => {
+          cache.put(event.request, responseClone);
         });
+        return response;
       })
       .catch(() => {
-        return caches.match('/index.html');
+        return caches.match(event.request);
       })
   );
 });
