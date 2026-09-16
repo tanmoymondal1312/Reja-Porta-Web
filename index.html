@@ -3,8 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Reja Portal</title>
-    <meta name="description" content="আপনার সব ব্যবসা, এক জায়গায় - সহজে পরিচালনা করুন, দ্রুত তথ্য দেখুন এবং আপনার ব্যবসার হিসাব রাখুন।">
+    <title>Reja Portal - আপনার সব ব্যবসা, এক জায়গায়</title>
+    <meta name="description" content="Reja Portal - কৃষি, খামার, গবাদিপশু ও ভূমি সেবা ব্যবস্থাপনা। প্রাইম এগ্রো ও ভূমি সেবাসহ সকল ব্যবসায়িক সেবা এক জায়গায়।">
+    <meta name="keywords" content="Reja Portal, প্রাইম এগ্রো, ভূমি সেবা, কৃষি ব্যবস্থাপনা, খামার ব্যবস্থাপনা, গবাদিপশু, জমি, কৃষি, বাংলাদেশ">
+    <meta name="author" content="Mediaghor">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rejaportal.com">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rejaportal.com">
+    <meta property="og:title" content="Reja Portal - আপনার সব ব্যবসা, এক জায়গায়">
+    <meta property="og:description" content="কৃষি, খামার, গবাদিপশু ও ভূমি সেবা ব্যবস্থাপনা। প্রাইম এগ্রো ও ভূমি সেবাসহ সকল ব্যবসায়িক সেবা এক জায়গায়।">
+    <meta property="og:image" content="https://rejaportal.com/images/reja-portal-logo.png">
+    <meta property="og:site_name" content="Reja Portal">
+    <meta property="og:locale" content="bn_BD">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://rejaportal.com">
+    <meta name="twitter:title" content="Reja Portal - আপনার সব ব্যবসা, এক জায়গায়">
+    <meta name="twitter:description" content="কৃষি, খামার, গবাদিপশু ও ভূমি সেবা ব্যবস্থাপনা। প্রাইম এগ্রো ও ভূমি সেবাসহ সকল ব্যবসায়িক সেবা এক জায়গায়।">
+    <meta name="twitter:image" content="https://rejaportal.com/images/reja-portal-logo.png">
+
+    <!-- PWA Meta -->
     <meta name="theme-color" content="#2e7d32">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -13,6 +35,23 @@
     <meta name="application-name" content="Reja Portal">
     <meta name="msapplication-TileColor" content="#2e7d32">
     <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Reja Portal",
+        "alternateName": ["Reja Portal", "রেজা পোর্টাল"],
+        "url": "https://rejaportal.com",
+        "description": "আপনার সব ব্যবসা, এক জায়গায় - কৃষি, খামার, গবাদিপশু ও ভূমি সেবা ব্যবস্থাপনা।",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Mediaghor",
+            "url": "https://mediaghor.com"
+        }
+    }
+    </script>
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
@@ -83,6 +122,13 @@
             </div>
         </div>
     </section>
+
+    <!-- Mediaghor Credit Footer -->
+    <footer class="mediaghor-footer">
+        <a href="https://mediaghor.com" target="_blank" rel="noopener noreferrer" class="mediaghor-link">
+            <img src="images/branding-logo.png" alt="Made with Mediaghor - Digital Agency Bangladesh" class="mediaghor-logo">
+        </a>
+    </footer>
 
     <!-- Install App Banner -->
     <div id="installBanner" class="install-banner hidden">
@@ -546,6 +592,40 @@
             .modal-content {
                 border-radius: 20px;
                 margin: 0 20px;
+            }
+        }
+
+        /* Mediaghor Footer */
+        .mediaghor-footer {
+            background: #0a0a0a;
+            padding: 24px 16px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .mediaghor-link {
+            display: inline-block;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .mediaghor-link:hover {
+            transform: scale(1.03);
+            opacity: 0.9;
+        }
+
+        .mediaghor-logo {
+            height: 70px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        @media (min-width: 600px) {
+            .mediaghor-footer {
+                padding: 30px 20px;
+            }
+
+            .mediaghor-logo {
+                height: 90px;
             }
         }
     </style>
