@@ -311,29 +311,42 @@ body {
 
     .cards-container {
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+        gap: 24px;
     }
 
     .card {
-        padding: 20px 24px;
+        padding: 28px 20px 24px;
+    }
+
+    .card-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .card-logo {
-        width: 64px;
-        height: 64px;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 12px;
+    }
+
+    .card-info {
+        text-align: center;
     }
 
     .card-info h3 {
-        font-size: 1.05rem;
+        font-size: 1.1rem;
+        margin-bottom: 6px;
     }
 
     .card-desc {
-        font-size: 0.78rem;
+        font-size: 0.82rem;
+        margin-bottom: 14px;
     }
 
     .btn {
-        padding: 9px 22px;
-        font-size: 0.85rem;
+        padding: 10px 28px;
+        font-size: 0.88rem;
     }
 }
 
@@ -351,16 +364,25 @@ body {
         width: 90px;
     }
 
+    .card {
+        padding: 32px 24px 28px;
+    }
+
     .card-logo {
-        width: 72px;
-        height: 72px;
+        width: 90px;
+        height: 90px;
     }
 
     .card-info h3 {
-        font-size: 1.15rem;
+        font-size: 1.2rem;
     }
 
     .card-desc {
-        font-size: 0.85rem;
+        font-size: 0.88rem;
+    }
+
+    .btn {
+        padding: 11px 32px;
+        font-size: 0.92rem;
     }
 }
